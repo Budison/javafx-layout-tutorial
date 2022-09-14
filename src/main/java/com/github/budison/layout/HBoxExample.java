@@ -9,7 +9,7 @@ import javafx.scene.layout.Priority;
  */
 class HBoxExample {
 
-    public static HBox createExample() {
+    static HBox createExample() {
         HBox hBox = new HBox();
         hBox.getStyleClass().add("bg-1");
         hBox.setFillHeight(true);
