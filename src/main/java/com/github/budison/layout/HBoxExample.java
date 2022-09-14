@@ -2,6 +2,7 @@ package com.github.budison.layout;
 
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
 
 /**
  * @author Kevin Nowak
@@ -26,6 +27,8 @@ class HBoxExample {
 
         Label l4 = new Label("Label 4");
         l4.getStyleClass().add("bg-5");
+        l4.setMaxWidth(300);
+        HBox.setHgrow(l4, Priority.ALWAYS);
 
         Label l5 = new Label("Label 5");
         l5.getStyleClass().add("bg-6");
